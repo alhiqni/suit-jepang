@@ -1,0 +1,187 @@
+*{
+	box-sizing: border-box;
+    font-family: cursive, serif;
+     color: aliceblue;
+
+}
+body{
+	background: #679b9b;
+	text-align: center;
+}
+h1 {
+    color: aliceblue;
+    font-size: 64px;
+    text-shadow: 4px 3px 6px #000, -4px 3px 5px #4cd3c2
+}
+.container{
+	width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-color: #4cd3c2;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+	box-shadow: 6px 3px 5px 2px #4e7c7c;
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+img.comp {
+    transform: rotate(180deg);
+}
+.box{
+	background: #7fffd480;
+    padding: 36px 10px;
+    border-radius: 20px;
+    height: 480px;
+    position: relative;
+}
+.box img {
+    margin: 20px;
+    border-radius: 50%;
+}
+.vs {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.life {
+    text-transform: uppercase;
+    color: red;
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    animation: blink2 1s infinite;
+}
+.score{
+    width: 120px;
+    height: 59px;
+    background-color: #4cd3c2;
+    top: 240px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 45px 0px;
+    box-shadow: 2px 2px 4px 0px #098d7d;
+}
+.hScore {
+    background: #679b9b;
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+	font-weight: bolder;
+}
+.input img:active{
+	box-shadow: 3px 5px 4px 0px #202020;
+}
+.bibBub{
+    animation: bibBub .75s infinite;
+}
+
+.notif {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -210px;
+    background: rgba(0, 0, 0, .4);
+    z-index: 999;
+    padding: 470px 19px 0px;
+    text-transform: uppercase;
+}
+.notif span{
+    display: block;
+    font-size: xxx-large;
+    margin: 10px;
+    animation: blink 1s infinite;
+}
+.notif a{
+    text-decoration: none;
+    transition: 1s;
+}
+.notif a:hover{
+    color: #dd2c2c;
+    text-shadow: 5px 4px 3px #6d1111;
+    font-weight: bold;
+}
+.notif-actve{
+    display: block; 
+}
+.news {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 100px;
+    right: 35px;
+}
+.news span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.winner, .loser, .draw {
+    font-size: 0;
+    opacity: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #679b9b;
+}
+.wow{
+    animation: wow 1.5s ease;
+}
+@keyframes wow{
+    0%{
+        font-size: 0;
+        opacity: 0;
+    }
+    50%{
+        font-size: 50px;
+        opacity: 1;
+        text-shadow: -9px 7px 20px #000, -5px 5px 17px #f00;
+    }
+    100%{
+        font-size: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes blink{
+    0%{
+        text-shadow: 0px 0px 20px #fff;
+        font-size: xxx-large;
+    }
+    50%{
+        text-shadow: 0px 0px 20px #00ffdf;
+        font-size: 49px;
+    }
+    100%{
+        text-shadow: 0px 0px 20px #17fda8;
+    }
+}
+@keyframes blink2{
+    0%{
+        text-shadow: 0 0 6px #f00;
+    }
+    33%{
+        text-shadow: 0 0 18px #f00;
+    }
+    66%{
+        text-shadow: 0 0 20px #f00;
+    }
+    100%{
+        text-shadow: 0 0 18px #f00;   
+    }
+}
+
+@keyframes bibBub{
+    0%{
+    }
+    50%{
+        box-shadow: 3px 3px 20px 2px #202020;
+    }
+    100%{
+    }
+}
